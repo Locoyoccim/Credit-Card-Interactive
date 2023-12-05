@@ -3,6 +3,7 @@ import img from "./assets/images/bg-main-mobile.png";
 import logo from "./assets/images/card-logo.svg";
 import front_card from "./assets/images/bg-card-front.png";
 import back_card from "./assets/images/bg-card-back.png";
+import arrow from "./assets/images/icon-complete.svg";
 
 function Top() {
   const [form, setForm] = useState({
@@ -181,7 +182,7 @@ function Top() {
           <button onClick={validar}>Confirm</button>
         </form>
         <div className="send_msj">
-          <img src="src/assets/images/icon-complete.svg" alt="arrow" />
+          <img src={arrow} alt="arrow" />
           <p>
             <strong>Thank you!</strong>
           </p>
