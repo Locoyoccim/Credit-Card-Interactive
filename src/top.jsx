@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from "./assets/images/bg-main-mobile.png";
+import img from "/assets/images/bg-main-mobile.png";
 
 function Top() {
   const [form, setForm] = useState({
@@ -87,7 +87,7 @@ function Top() {
         </div>
         <div className="cardBack_container">
           <img
-            src="src/assets/images/bg-card-back.png"
+            src="./src/assets/images/bg-card-back.png"
             alt="back_card"
             className="card_back"
           />
@@ -95,13 +95,13 @@ function Top() {
         </div>
         <div className="front_card_container">
           <img
-            src="src/assets/images/card-logo.svg"
+            src="./src/assets/images/card-logo.svg"
             alt="logo"
             className="logo"
           />
           <div className="card_info_container">
             <img
-              src="src/assets/images/bg-card-front.png"
+              src="./src/assets/images/bg-card-front.png"
               alt="front_card"
               className="card_front"
             />
