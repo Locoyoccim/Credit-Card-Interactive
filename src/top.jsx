@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import img from "/assets/images/bg-main-mobile.png";
+import img from "./assets/images/bg-main-mobile.png";
+import logo from "./assets/images/card-logo.svg";
+import front_card from "./assets/images/bg-card-front.png";
+import back_card from "./assets/images/bg-card-back.png";
 
 function Top() {
   const [form, setForm] = useState({
@@ -86,25 +89,13 @@ function Top() {
           <img src={img} alt="mobile" className="bg_img" />
         </div>
         <div className="cardBack_container">
-          <img
-            src="./src/assets/images/bg-card-back.png"
-            alt="back_card"
-            className="card_back"
-          />
+          <img src={back_card} alt="back_card" className="card_back" />
           <span className="back_number">{cvc}</span>
         </div>
         <div className="front_card_container">
-          <img
-            src="./src/assets/images/card-logo.svg"
-            alt="logo"
-            className="logo"
-          />
+          <img src={logo} alt="logo" className="logo" />
           <div className="card_info_container">
-            <img
-              src="./src/assets/images/bg-card-front.png"
-              alt="front_card"
-              className="card_front"
-            />
+            <img src={front_card} alt="front_card" className="card_front" />
             <div className="card_info">
               <p className="card_number">{card}</p>
               <div id="name_and_expdate">
